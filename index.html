@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StackVena — Full-stack web development and AI integration. Enterprise-grade quality at startup-friendly pricing.">
+  <title>StackVena</title>
+
+  <!-- Favicon: square-cropped icon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── RESET & TOKENS ─────────────────────────────────────────── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Colors */
+      --bg:        #06080f;
+      --bg-2:      #0b0f1a;
+      --surface:   #0f1420;
+      --surface-2: #141926;
+      --surface-3: #1a2035;
+
+      --border:    rgba(255,255,255,0.06);
+      --border-2:  rgba(255,255,255,0.10);
+      --border-3:  rgba(255,255,255,0.14);
+
+      --accent:    #3b7cf4;
+      --accent-2:  #00c9ff;
+      --accent-3:  #7b5ea7;
+
+      --text:      #e8ecf4;
+      --text-2:    #8892a4;
+      --text-3:    #5a6478;
+
+      --glow:      rgba(59,124,244,0.18);
+      --glow-2:    rgba(0,201,255,0.08);
+
+      /* Spacing scale (8px base) */
+      --sp-1:  8px;
+      --sp-2:  16px;
+      --sp-3:  24px;
+      --sp-4:  32px;
+      --sp-5:  40px;
+      --sp-6:  48px;
+      --sp-8:  64px;
+      --sp-10: 80px;
+      --sp-12: 96px;
+      --sp-16: 128px;
+
+      /* Layout */
+      --nav-h:      80px;
+      --max-w:      1120px;
+      --pad-x:      clamp(24px, 6vw, 80px);
+
+      /* Radius */
+      --r-sm:  6px;
+      --r-md:  10px;
+      --r-lg:  16px;
+      --r-xl:  24px;
+
+      /* Easing */
+      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection { background: rgba(59,124,244,0.3); }
+
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent-3); border-radius: 2px; }
+
+    img, svg { display: block; }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── NAV ────────────────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 200;
+      height: var(--nav-h);
+      padding: 0 var(--pad-x);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--sp-4);
+      background: rgba(6, 8, 15, 0.65);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .nav--scrolled {
+      background: rgba(6, 8, 15, 0.96);
+      border-color: var(--border-2);
+    }
+
+    /* Logo — full logo with company name */
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      outline-offset: 4px;
+    }
+
+    .nav__logo img {
+      height: 80px;
+      width: auto;
+      /* Preserve SVG crispness */
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+
+    /* Desktop links */
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-5);
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-2);
+      letter-spacing: 0.02em;
+      position: relative;
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+
+    .nav__links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0;
+      width: 0; height: 1px;
+      background: var(--accent-2);
+      transition: width 0.25s var(--ease-out);
+    }
+
+    .nav__links a:hover {
+      color: var(--text);
+    }
+
+    .nav__links a:hover::after { width: 100%; }
+
+    /* CTA button in nav */
+    .nav__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 20px;
+      border-radius: var(--r-md);
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 16px rgba(59,124,244,0.30);
+      white-space: nowrap;
+    }
+
+    .nav__cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(59,124,244,0.45);
+    }
+
+    /* Hamburger */
+    .nav__hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 36px; height: 36px;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding: 4px;
+      border-radius: var(--r-sm);
+    }
+
+    .nav__hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--text-2);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s, background 0.2s;
+      transform-origin: center;
+    }
+
+    .nav__hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav__hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav__hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile drawer */
+    .nav__drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      inset-inline: 0;
+      background: rgba(6, 8, 15, 0.98);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--border-2);
+      padding: var(--sp-3) var(--pad-x) var(--sp-4);
+      flex-direction: column;
+      gap: 0;
+      z-index: 190;
+      transform: translateY(-8px);
+      opacity: 0;
+      transition: transform 0.25s var(--ease-out), opacity 0.25s;
+    }
+
+    .nav__drawer.is-open {
+      display: flex;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .nav__drawer a {
+      color: var(--text-2);
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+
+    .nav__drawer a:last-child { border-bottom: none; }
+    .nav__drawer a:hover { color: var(--text); }
+
+    /* ─── HERO ───────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: calc(var(--nav-h) + var(--sp-12)) var(--pad-x) var(--sp-12);
+      overflow: hidden;
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 90% 60% at 50% -10%, rgba(59,124,244,0.14) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 45% at 85% 85%,  rgba(0,201,255,0.07) 0%, transparent 55%),
+        radial-gradient(ellipse 45% 50% at 8% 65%,   rgba(123,94,167,0.09) 0%, transparent 55%);
+    }
+
+    .hero__grid {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 0%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 0%, transparent 75%);
+    }
+
+    .hero__content {
+      position: relative;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(59,124,244,0.10);
+      border: 1px solid rgba(59,124,244,0.22);
+      border-radius: 100px;
+      padding: 7px 16px;
+      font-size: 0.72rem;
+      color: var(--accent-2);
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: var(--sp-4);
+    }
+
+    .hero__badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1;   transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.75); }
+    }
+
+    .hero__h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.75rem, 6vw, 5.5rem);
+      font-weight: 800;
+      line-height: 1.04;
+      letter-spacing: -0.035em;
+      margin-bottom: var(--sp-3);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff 0%, var(--accent-2) 48%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero__desc {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: var(--text-2);
+      max-width: 540px;
+      margin: 0 auto var(--sp-5);
+      line-height: 1.75;
+      font-weight: 300;
+    }
+
+    /* Primary CTA */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      padding: 15px 34px;
+      border-radius: var(--r-md);
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s var(--ease-out), box-shadow 0.2s;
+      box-shadow: 0 4px 28px rgba(59,124,244,0.35);
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.18), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 36px rgba(59,124,244,0.50);
+    }
+
+    .btn-primary:hover::before { opacity: 1; }
+
+    .btn-primary svg { transition: transform 0.2s; }
+    .btn-primary:hover svg { transform: translateX(3px); }
+
+    /* Stats strip */
+    .hero__stats {
+      display: flex;
+      justify-content: center;
+      gap: clamp(24px, 5vw, 56px);
+      margin-top: var(--sp-8);
+      padding-top: var(--sp-5);
+      border-top: 1px solid var(--border-2);
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat__num {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat__label {
+      font-size: 0.7rem;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-weight: 500;
+    }
+
+    /* ─── SECTIONS SHARED ────────────────────────────────────────── */
+    section {
+      padding: var(--sp-12) var(--pad-x);
+    }
+
+    .section__label {
+      font-size: 0.68rem;
+      color: var(--accent-2);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .section__title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.028em;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .section__sub {
+      color: var(--text-2);
+      font-size: clamp(0.9rem, 1.5vw, 1rem);
+      max-width: 480px;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-2) 35%, var(--border-2) 65%, transparent);
+      margin: 0 var(--pad-x);
+    }
+
+    /* ─── SERVICES ───────────────────────────────────────────────── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5px;
+      margin-top: var(--sp-6);
+      background: var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+
+    .service-card {
+      background: var(--surface);
+      padding: var(--sp-6) var(--sp-6);
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      inset: 0 0 auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .service-card:hover { background: var(--surface-2); }
+    .service-card:hover::after { opacity: 1; }
+
+    .service-card__icon {
+      width: 52px; height: 52px;
+      border-radius: var(--r-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: var(--sp-3);
+      background: rgba(59,124,244,0.10);
+      border: 1px solid rgba(59,124,244,0.22);
+      flex-shrink: 0;
+    }
+
+    .service-card__icon--alt {
+      background: rgba(0,201,255,0.08);
+      border-color: rgba(0,201,255,0.20);
+    }
+
+    .service-card__title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.015em;
+    }
+
+    .service-card__desc {
+      color: var(--text-2);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .service-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: var(--sp-3);
+    }
+
+    .tag {
+      font-size: 0.695rem;
+      color: var(--text-3);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-2);
+      border-radius: var(--r-sm);
+      padding: 4px 10px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .tag:hover {
+      color: var(--text-2);
+      border-color: var(--border-3);
+    }
+
+    /* ─── WHY US ─────────────────────────────────────────────────── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: var(--sp-6);
+      background: var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+
+    .why-card {
+      background: var(--surface);
+      padding: var(--sp-4) var(--sp-3);
+      transition: background 0.3s;
+    }
+
+    .why-card:hover { background: var(--surface-2); }
+
+    .why-card__num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.25rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .why-card__title {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .why-card__desc {
+      font-size: 0.82rem;
+      color: var(--text-3);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    /* ─── PLATFORMS ──────────────────────────────────────────────── */
+    .platforms-inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+      max-width: 740px;
+    }
+
+    .platform-card {
+      background: var(--surface);
+      border: 1px solid var(--border-2);
+      border-radius: var(--r-lg);
+      padding: var(--sp-4) var(--sp-4);
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .platform-card:hover {
+      border-color: rgba(59,124,244,0.32);
+      transform: translateY(-4px);
+    }
+
+    .platform-card__icon {
+      font-size: 2.25rem;
+      margin-bottom: var(--sp-2);
+      display: block;
+    }
+
+    .platform-card__title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .platform-card__desc {
+      font-size: 0.875rem;
+      color: var(--text-2);
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    /* ─── FOUNDERS ───────────────────────────────────────────────── */
+    .founders-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+      max-width: 840px;
+    }
+
+    .founder-card {
+      background: var(--surface);
+      border: 1px solid var(--border-2);
+      border-radius: var(--r-lg);
+      padding: var(--sp-4);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .founder-card::after {
+      content: '';
+      position: absolute;
+      bottom: -30px; right: -30px;
+      width: 140px; height: 140px;
+      background: radial-gradient(circle, rgba(59,124,244,0.07) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .founder-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(59,124,244,0.28);
+    }
+
+    .founder-card__avatar {
+      width: 56px; height: 56px;
+      border-radius: var(--r-md);
+      background: linear-gradient(135deg, var(--accent), var(--accent-3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: var(--sp-2);
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+    }
+
+    .founder-card__name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .founder-card__role {
+      font-size: 0.72rem;
+      color: var(--accent-2);
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .founder-card__desc {
+      font-size: 0.875rem;
+      color: var(--text-2);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    /* ─── CONTACT ────────────────────────────────────────────────── */
+    .contact-inner {
+      max-width: 580px;
+    }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border-2);
+      border-radius: var(--r-lg);
+      padding: var(--sp-4);
+      margin-top: var(--sp-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--sp-4);
+      transition: border-color 0.3s;
+    }
+
+    .contact-box:hover { border-color: rgba(59,124,244,0.32); }
+
+    .contact-box__label {
+      font-size: 0.72rem;
+      color: var(--text-3);
+      margin-bottom: 5px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    .contact-box__email {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--accent-2);
+      padding: 11px 22px;
+      border-radius: var(--r-md);
+      font-weight: 600;
+      font-size: 0.84rem;
+      border: 1px solid rgba(0,201,255,0.28);
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .btn-outline:hover {
+      background: rgba(0,201,255,0.08);
+      border-color: rgba(0,201,255,0.50);
+      transform: translateY(-1px);
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────────────── */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: var(--sp-4) var(--pad-x);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--sp-4);
+    }
+
+    .footer__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer__logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .footer__right {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-5);
+    }
+
+    .footer__links {
+      display: flex;
+      gap: var(--sp-4);
+      list-style: none;
+    }
+
+    .footer__links a {
+      font-size: 0.8rem;
+      color: var(--text-3);
+      transition: color 0.2s;
+    }
+
+    .footer__links a:hover { color: var(--text-2); }
+
+    .footer__copy {
+      font-size: 0.75rem;
+      color: var(--text-3);
+      white-space: nowrap;
+    }
+
+    /* ─── SCROLL ANIMATIONS ──────────────────────────────────────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+    }
+
+    .fade-up.is-visible { opacity: 1; transform: translateY(0); }
+
+    .fade-up.delay-1 { transition-delay: 0.08s; }
+    .fade-up.delay-2 { transition-delay: 0.16s; }
+    .fade-up.delay-3 { transition-delay: 0.24s; }
+    .fade-up.delay-4 { transition-delay: 0.32s; }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      /* Nav */
+      .nav__links { display: none; }
+      .nav__cta   { display: none; }
+      .nav__hamburger { display: flex; }
+
+      /* Grids */
+      .services-grid   { grid-template-columns: 1fr; }
+      .founders-grid   { grid-template-columns: 1fr; }
+      .platforms-inner { grid-template-columns: 1fr; }
+
+      /* Stats */
+      .hero__stats { gap: var(--sp-4); }
+
+      /* Contact */
+      .contact-box { flex-direction: column; align-items: flex-start; }
+
+      /* Footer */
+      .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--sp-3);
+      }
+      .footer__right { flex-direction: column; gap: var(--sp-2); }
+    }
+
+    @media (max-width: 540px) {
+      section { padding: var(--sp-10) var(--pad-x); }
+      .why-grid { grid-template-columns: 1fr; }
+      .hero__stats { flex-direction: column; gap: var(--sp-3); }
+    }
+
+    @media (max-width: 400px) {
+      :root { --pad-x: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ NAVIGATION ══════════════════════════════════════════════ -->
+  <nav class="nav" id="navbar" role="navigation" aria-label="Primary navigation">
+    <a href="#home" class="nav__logo" aria-label="StackVena — home">
+      <!-- Full logo with company name -->
+      <img
+        src="logo-full.svg"
+        alt="StackVena"
+        width="144"
+        height="52"
+        fetchpriority="high"
+      >
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="nav__cta" aria-label="Start a project with StackVena">
+      Start a Project
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+        <path d="M2 6.5h9M7 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+    <button
+      class="nav__hamburger"
+      id="hamburger"
+      aria-expanded="false"
+      aria-controls="mobile-drawer"
+      aria-label="Toggle navigation menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <nav class="nav__drawer" id="mobile-drawer" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════════════ -->
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge fade-up" aria-label="Status: Available for projects">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        Available for Projects
+      </div>
+
+      <h1 class="hero__h1 fade-up delay-1" id="hero-heading">
+        <span class="gradient-text">Build. Automate.</span><br>Elevate.
+      </h1>
+
+      <p class="hero__desc fade-up delay-2">
+        We craft robust full-stack web products and intelligent AI systems — delivering
+        enterprise-grade quality at startup-friendly pricing.
+      </p>
+
+      <a href="#contact" class="btn-primary fade-up delay-3" aria-label="Work with StackVena — contact us">
+        Work With Us
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <div class="hero__stats fade-up delay-4" role="list" aria-label="Key stats">
+        <div class="stat" role="listitem">
+          <div class="stat__num">2+</div>
+          <div class="stat__label">Years Active</div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="stat__num">100%</div>
+          <div class="stat__label">Client Focus</div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="stat__num">AI + Web</div>
+          <div class="stat__label">Dual Expertise</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ═══ SERVICES ════════════════════════════════════════════════ -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="section__label fade-up">What We Do</div>
+    <h2 class="section__title fade-up delay-1" id="services-heading">Our Core Services</h2>
+    <p class="section__sub fade-up delay-2">
+      Two powerful disciplines, one unified team — built to take your ideas from concept to production.
+    </p>
+
+    <div class="services-grid fade-up delay-1" role="list">
+
+      <article class="service-card" role="listitem">
+        <div class="service-card__icon" aria-hidden="true">⚡</div>
+        <h3 class="service-card__title">Full Stack Web Development</h3>
+        <p class="service-card__desc">
+          From landing pages to complex platforms — we architect, design, and ship scalable web
+          applications with clean code and sharp UI. Every product is built for performance and longevity.
+        </p>
+        <div class="service-card__tags" aria-label="Technologies">
+          <span class="tag">React / Next.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Deployment</span>
+        </div>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-card__icon service-card__icon--alt" aria-hidden="true">🤖</div>
+        <h3 class="service-card__title">AI Integration</h3>
+        <p class="service-card__desc">
+          We build intelligent systems that automate workflows, process data, and augment decision-making.
+          Python-powered automation that integrates seamlessly into your existing stack.
+        </p>
+        <div class="service-card__tags" aria-label="Technologies">
+          <span class="tag">Python</span>
+          <span class="tag">LLM APIs</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Data Pipelines</span>
+          <span class="tag">OpenAI / Anthropic</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ═══ WHY US ══════════════════════════════════════════════════ -->
+  <section aria-labelledby="why-heading">
+    <div class="section__label fade-up">Why StackVena</div>
+    <h2 class="section__title fade-up delay-1" id="why-heading">Built on Four Pillars</h2>
+    <p class="section__sub fade-up delay-2">
+      We believe great software is a result of discipline, clarity, and genuine investment in your success.
+    </p>
+
+    <div class="why-grid fade-up delay-1" role="list">
+      <article class="why-card" role="listitem">
+        <div class="why-card__num" aria-hidden="true">01</div>
+        <h3 class="why-card__title">Affordable Pricing</h3>
+        <p class="why-card__desc">Enterprise-grade quality without the enterprise price tag. Transparent, fair, flexible.</p>
+      </article>
+      <article class="why-card" role="listitem">
+        <div class="why-card__num" aria-hidden="true">02</div>
+        <h3 class="why-card__title">Stability &amp; Reliability</h3>
+        <p class="why-card__desc">We ship products that last — built with solid architecture, thorough testing, and clean handoffs.</p>
+      </article>
+      <article class="why-card" role="listitem">
+        <div class="why-card__num" aria-hidden="true">03</div>
+        <h3 class="why-card__title">Modern Tech Stack</h3>
+        <p class="why-card__desc">Always current. We leverage the latest tools and frameworks to give your product a real edge.</p>
+      </article>
+      <article class="why-card" role="listitem">
+        <div class="why-card__num" aria-hidden="true">04</div>
+        <h3 class="why-card__title">Client-First Approach</h3>
+        <p class="why-card__desc">Your vision drives us. We listen deeply, communicate clearly, and deliver what actually matters.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ═══ PLATFORMS ════════════════════════════════════════════════ -->
+  <section aria-labelledby="platforms-heading">
+    <div class="section__label fade-up">Where We Work</div>
+    <h2 class="section__title fade-up delay-1" id="platforms-heading">Our Platforms</h2>
+    <p class="section__sub fade-up delay-2">
+      Find us on Upwork or reach out directly — wherever you are, we're ready to collaborate.
+    </p>
+
+    <div class="platforms-inner">
+      <article class="platform-card fade-up delay-1">
+        <span class="platform-card__icon" aria-hidden="true">🌐</span>
+        <h3 class="platform-card__title">Upwork</h3>
+        <p class="platform-card__desc">
+          Hire us through Upwork for secure contracts, milestone-based payments, and verified work history.
+          Ideal for global clients.
+        </p>
+      </article>
+      <article class="platform-card fade-up delay-2">
+        <span class="platform-card__icon" aria-hidden="true">🤝</span>
+        <h3 class="platform-card__title">Local Clients</h3>
+        <p class="platform-card__desc">
+          Based in Pakistan, we work closely with local businesses to build digital products tailored
+          to regional needs and markets.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ═══ FOUNDERS ════════════════════════════════════════════════ -->
+  <section id="about" aria-labelledby="founders-heading">
+    <div class="section__label fade-up">The Team</div>
+    <h2 class="section__title fade-up delay-1" id="founders-heading">Meet the Founders</h2>
+    <p class="section__sub fade-up delay-2">
+      Two specialists. One shared mission: shipping software that genuinely works.
+    </p>
+
+    <div class="founders-grid">
+      <article class="founder-card fade-up delay-1">
+        <div class="founder-card__avatar" aria-hidden="true">AR</div>
+        <div class="founder-card__name">Ahsan Raza</div>
+        <div class="founder-card__role">AI Integration Specialist</div>
+        <p class="founder-card__desc">
+          Python expert specializing in automation, intelligent systems, and AI-powered workflows.
+          Turns complex problems into elegant machine solutions.
+        </p>
+      </article>
+
+      <article class="founder-card fade-up delay-2">
+        <div class="founder-card__avatar" aria-hidden="true">MH</div>
+        <div class="founder-card__name">Muhammad Hamid</div>
+        <div class="founder-card__role">Full Stack Developer</div>
+        <p class="founder-card__desc">
+          Two years of hands-on experience in a professional software house — delivering polished,
+          production-ready web applications from design to deployment.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ═══ CONTACT ══════════════════════════════════════════════════ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="contact-inner">
+      <div class="section__label fade-up">Get in Touch</div>
+      <h2 class="section__title fade-up delay-1" id="contact-heading">Let's Build Something</h2>
+      <p class="section__sub fade-up delay-2">
+        Have a project in mind? Reach out and we'll get back to you within 24 hours.
+      </p>
+
+      <div class="contact-box fade-up delay-3">
+        <div>
+          <div class="contact-box__label">Email us at</div>
+          <div class="contact-box__email">contact@stackvena.com</div>
+        </div>
+        <a href="mailto:contact@stackvena.com" class="btn-outline" aria-label="Send email to StackVena">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+            <path d="M1 2.5h13L7.5 8.5 1 2.5zm0 0v10l4-4m9-6v10l-4-4"
+              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Send Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ══════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <a href="#home" class="footer__logo" aria-label="StackVena — back to top">
+      <!-- Icon-only logo in footer for compact layout -->
+      <img
+        src="logo-full.svg"
+        alt="StackVena"
+        width="105"
+        height="38"
+      >
+    </a>
+
+    <div class="footer__right">
+      <nav aria-label="Footer navigation">
+        <ul class="footer__links" role="list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <span class="footer__copy">© 2026 StackVena. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ═══ SCRIPTS ══════════════════════════════════════════════════ -->
+  <script>
+    (() => {
+      'use strict';
+
+      /* ── Navbar scroll class ──────────────────────────────────── */
+      const navbar = document.getElementById('navbar');
+      const onScroll = () => {
+        navbar.classList.toggle('nav--scrolled', window.scrollY > 16);
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      /* ── Hamburger / mobile drawer ────────────────────────────── */
+      const hamburger   = document.getElementById('hamburger');
+      const mobileDrawer = document.getElementById('mobile-drawer');
+
+      const toggleMenu = (open) => {
+        hamburger.classList.toggle('is-open', open);
+        hamburger.setAttribute('aria-expanded', String(open));
+        if (open) {
+          mobileDrawer.classList.add('is-open');
+        } else {
+          mobileDrawer.classList.remove('is-open');
+        }
+      };
+
+      hamburger.addEventListener('click', () => {
+        const isOpen = hamburger.classList.contains('is-open');
+        toggleMenu(!isOpen);
+      });
+
+      // Close on drawer link tap
+      mobileDrawer.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => toggleMenu(false));
+      });
+
+      // Close on outside click
+      document.addEventListener('click', (e) => {
+        if (!navbar.contains(e.target) && !mobileDrawer.contains(e.target)) {
+          toggleMenu(false);
+        }
+      });
+
+      /* ── Keyboard: close on Escape ────────────────────────────── */
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') toggleMenu(false);
+      });
+
+      /* ── Scroll-reveal (IntersectionObserver) ─────────────────── */
+      const revealElements = document.querySelectorAll('.fade-up');
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.08, rootMargin: '0px 0px -32px 0px' }
+      );
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      /* ── Smooth anchor scroll ─────────────────────────────────── */
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          const target = document.querySelector(anchor.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            const offset = parseInt(getComputedStyle(document.documentElement)
+              .getPropertyValue('--nav-h')) || 72;
+            const top = target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
