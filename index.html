@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="StackVena — Full-stack web development and AI integration. Enterprise-grade quality at startup-friendly pricing.">
-  <title>StackVena</title>
+  <meta name="description" content="Ahsan Raza & Muhammad Hamid — AI automation, LLM integration, Python backend & React/Next.js full-stack development. Hire remote experts at startup-friendly rates.">
+  <meta name="keywords" content="Ahsan Raza, Muhammad Hamid, StackVena, AI automation agency, LLM integration, LLM orchestration services, Python backend architecture, MongoDB developers, React Next.js development, TypeScript experts, Laravel PHP developers, MySQL database optimization, full-stack product engineering, hire remote software engineers, AI consulting, SaaS development, API integration">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Ahsan Raza & Muhammad Hamid | AI Automation, Full-Stack Development & LLM Integration Experts — StackVena">
+  <meta property="og:description" content="StackVena — AI-powered automation, LLM orchestration & full-stack web development by Ahsan Raza and Muhammad Hamid. Enterprise-grade quality at startup-friendly pricing.">
+  <meta property="og:type" content="website">
+  <title>Ahsan Raza &amp; Muhammad Hamid | AI Automation, Full-Stack Development &amp; LLM Integration Experts — StackVena</title>
 
-  <!-- Favicon: square-cropped icon -->
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" href="favicon.svg">
 
@@ -14,6 +19,65 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://stackvena.com/#organization",
+        "name": "StackVena",
+        "url": "https://stackvena.com",
+        "logo": "https://stackvena.com/logo-full.svg",
+        "description": "AI automation agency and full-stack development studio specializing in LLM integration, Python backend architecture, React/Next.js development, and TypeScript-first engineering.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@stackvena.com",
+          "contactType": "customer service"
+        },
+        "founders": [
+          { "@id": "https://stackvena.com/#ahsan-raza" },
+          { "@id": "https://stackvena.com/#muhammad-hamid" }
+        ],
+        "knowsAbout": [
+          "AI-Powered Automation", "LLM Integration & Orchestration", "Python Backend Architecture",
+          "MongoDB & NoSQL Data Modeling", "Algorithmic Problem Solving",
+          "React & Next.js Ecosystem", "TypeScript-First Development",
+          "Laravel & PHP Framework Expertise", "MySQL Database Optimization",
+          "Full-Stack Product Engineering"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://stackvena.com/#ahsan-raza",
+        "name": "Ahsan Raza",
+        "jobTitle": "AI Integration Specialist & Co-Founder",
+        "worksFor": { "@id": "https://stackvena.com/#organization" },
+        "knowsAbout": [
+          "AI-Powered Automation", "LLM Integration ",
+          "Python Backend Architecture", "MongoDB & NoSQL Data Modeling",
+          "Algorithmic Problem Solving"
+        ],
+        "description": "AI integration specialist and co-founder of StackVena, expert in LLM orchestration, Python backend architecture, MongoDB data modeling, and algorithmic problem solving."
+      },
+      {
+        "@type": "Person",
+        "@id": "https://stackvena.com/#muhammad-hamid",
+        "name": "Muhammad Hamid",
+        "jobTitle": "Full Stack Developer & Co-Founder",
+        "worksFor": { "@id": "https://stackvena.com/#organization" },
+        "knowsAbout": [
+          "React & Next.js Ecosystem", "TypeScript-First Development",
+          "Laravel & PHP Framework Expertise", "MySQL Database Optimization",
+          "Full-Stack Product Engineering"
+        ],
+        "description": "Full-stack developer and co-founder of StackVena, expert in React, Next.js, TypeScript, Laravel PHP, and MySQL database optimization."
+      }
+    ]
+  }
+  </script>
 
   <style>
     /* ─── RESET & TOKENS ─────────────────────────────────────────── */
@@ -91,7 +155,6 @@
     ::-webkit-scrollbar-thumb { background: var(--accent-3); border-radius: 2px; }
 
     img, svg { display: block; }
-
     a { color: inherit; text-decoration: none; }
 
     /* ─── NAV ────────────────────────────────────────────────────── */
@@ -117,7 +180,6 @@
       border-color: var(--border-2);
     }
 
-    /* Logo — full logo with company name */
     .nav__logo {
       display: flex;
       align-items: center;
@@ -128,12 +190,10 @@
     .nav__logo img {
       height: 80px;
       width: auto;
-      /* Preserve SVG crispness */
       image-rendering: -webkit-optimize-contrast;
       image-rendering: crisp-edges;
     }
 
-    /* Desktop links */
     .nav__links {
       display: flex;
       align-items: center;
@@ -160,13 +220,9 @@
       transition: width 0.25s var(--ease-out);
     }
 
-    .nav__links a:hover {
-      color: var(--text);
-    }
-
+    .nav__links a:hover { color: var(--text); }
     .nav__links a:hover::after { width: 100%; }
 
-    /* CTA button in nav */
     .nav__cta {
       display: inline-flex;
       align-items: center;
@@ -189,7 +245,6 @@
       box-shadow: 0 6px 24px rgba(59,124,244,0.45);
     }
 
-    /* Hamburger */
     .nav__hamburger {
       display: none;
       flex-direction: column;
@@ -216,7 +271,6 @@
     .nav__hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
     .nav__hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-    /* Mobile drawer */
     .nav__drawer {
       display: none;
       position: fixed;
@@ -290,7 +344,7 @@
     .hero__content {
       position: relative;
       width: 100%;
-      max-width: 860px;
+      max-width: 920px;
       margin: 0 auto;
     }
 
@@ -301,17 +355,17 @@
       background: rgba(59,124,244,0.10);
       border: 1px solid rgba(59,124,244,0.22);
       border-radius: 100px;
-      padding: 7px 16px;
-      font-size: 0.72rem;
+      padding: 8px 18px;
+      font-size: 0.75rem;
       color: var(--accent-2);
       letter-spacing: 0.09em;
       text-transform: uppercase;
       font-weight: 600;
-      margin-bottom: var(--sp-4);
+      margin-bottom: var(--sp-5);
     }
 
     .hero__badge-dot {
-      width: 6px; height: 6px;
+      width: 7px; height: 7px;
       border-radius: 50%;
       background: var(--accent-2);
       animation: pulse 2.4s ease-in-out infinite;
@@ -322,13 +376,14 @@
       50%       { opacity: 0.4; transform: scale(0.75); }
     }
 
+    /* ── HERO H1 — LARGEST, most dominant element ─── */
     .hero__h1 {
       font-family: 'Syne', sans-serif;
-      font-size: clamp(2.75rem, 6vw, 5.5rem);
+      font-size: clamp(3.25rem, 7.5vw, 6.5rem);
       font-weight: 800;
-      line-height: 1.04;
-      letter-spacing: -0.035em;
-      margin-bottom: var(--sp-3);
+      line-height: 1.03;
+      letter-spacing: -0.04em;
+      margin-bottom: var(--sp-4);
     }
 
     .gradient-text {
@@ -338,33 +393,44 @@
       background-clip: text;
     }
 
+    /* ── Hero tagline ─── */
+    .hero__tagline {
+      font-size: clamp(0.85rem, 1.3vw, 1rem);
+      color: var(--accent-2);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: var(--sp-2);
+      opacity: 0.85;
+    }
+
     .hero__desc {
-      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
       color: var(--text-2);
-      max-width: 540px;
-      margin: 0 auto var(--sp-5);
-      line-height: 1.75;
+      max-width: 580px;
+      margin: 0 auto var(--sp-6);
+      line-height: 1.78;
       font-weight: 300;
     }
 
-    /* Primary CTA */
+    /* Primary CTA — dominant size */
     .btn-primary {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       background: var(--accent);
       color: #fff;
-      padding: 15px 34px;
+      padding: 18px 40px;
       border-radius: var(--r-md);
-      font-weight: 600;
-      font-size: 0.9rem;
+      font-weight: 700;
+      font-size: 1rem;
       letter-spacing: 0.02em;
       border: none;
       cursor: pointer;
       position: relative;
       overflow: hidden;
       transition: transform 0.2s var(--ease-out), box-shadow 0.2s;
-      box-shadow: 0 4px 28px rgba(59,124,244,0.35);
+      box-shadow: 0 4px 32px rgba(59,124,244,0.40);
     }
 
     .btn-primary::before {
@@ -378,11 +444,10 @@
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 36px rgba(59,124,244,0.50);
+      box-shadow: 0 12px 40px rgba(59,124,244,0.55);
     }
 
     .btn-primary:hover::before { opacity: 1; }
-
     .btn-primary svg { transition: transform 0.2s; }
     .btn-primary:hover svg { transform: translateX(3px); }
 
@@ -390,27 +455,25 @@
     .hero__stats {
       display: flex;
       justify-content: center;
-      gap: clamp(24px, 5vw, 56px);
-      margin-top: var(--sp-8);
-      padding-top: var(--sp-5);
+      gap: clamp(24px, 5vw, 64px);
+      margin-top: var(--sp-10);
+      padding-top: var(--sp-6);
       border-top: 1px solid var(--border-2);
     }
 
-    .stat {
-      text-align: center;
-    }
+    .stat { text-align: center; }
 
     .stat__num {
       font-family: 'Syne', sans-serif;
-      font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+      font-size: clamp(1.75rem, 2.8vw, 2.25rem);
       font-weight: 700;
       color: var(--text);
       line-height: 1;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .stat__label {
-      font-size: 0.7rem;
+      font-size: 0.72rem;
       color: var(--text-3);
       text-transform: uppercase;
       letter-spacing: 0.09em;
@@ -423,28 +486,29 @@
     }
 
     .section__label {
-      font-size: 0.68rem;
+      font-size: 0.7rem;
       color: var(--accent-2);
       text-transform: uppercase;
       letter-spacing: 0.16em;
       font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
+    /* ── Section titles — clearly larger than body text ─── */
     .section__title {
       font-family: 'Syne', sans-serif;
-      font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+      font-size: clamp(2rem, 4vw, 3.25rem);
       font-weight: 700;
-      letter-spacing: -0.028em;
-      line-height: 1.15;
-      margin-bottom: 14px;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 18px;
     }
 
     .section__sub {
       color: var(--text-2);
-      font-size: clamp(0.9rem, 1.5vw, 1rem);
-      max-width: 480px;
-      line-height: 1.7;
+      font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+      max-width: 520px;
+      line-height: 1.75;
       font-weight: 300;
     }
 
@@ -488,12 +552,12 @@
     .service-card:hover::after { opacity: 1; }
 
     .service-card__icon {
-      width: 52px; height: 52px;
+      width: 56px; height: 56px;
       border-radius: var(--r-md);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-bottom: var(--sp-3);
       background: rgba(59,124,244,0.10);
       border: 1px solid rgba(59,124,244,0.22);
@@ -507,16 +571,16 @@
 
     .service-card__title {
       font-family: 'Syne', sans-serif;
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       font-weight: 700;
-      margin-bottom: 10px;
-      letter-spacing: -0.015em;
+      margin-bottom: 12px;
+      letter-spacing: -0.018em;
     }
 
     .service-card__desc {
       color: var(--text-2);
-      font-size: 0.92rem;
-      line-height: 1.7;
+      font-size: 0.94rem;
+      line-height: 1.72;
       font-weight: 300;
     }
 
@@ -557,7 +621,7 @@
 
     .why-card {
       background: var(--surface);
-      padding: var(--sp-4) var(--sp-3);
+      padding: var(--sp-5) var(--sp-4);
       transition: background 0.3s;
     }
 
@@ -565,26 +629,26 @@
 
     .why-card__num {
       font-family: 'Syne', sans-serif;
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       font-weight: 800;
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       line-height: 1;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .why-card__title {
       font-family: 'Syne', sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 700;
       margin-bottom: 8px;
       letter-spacing: -0.01em;
     }
 
     .why-card__desc {
-      font-size: 0.82rem;
+      font-size: 0.83rem;
       color: var(--text-3);
       line-height: 1.65;
       font-weight: 300;
@@ -620,7 +684,7 @@
 
     .platform-card__title {
       font-family: 'Syne', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 700;
       margin-bottom: 8px;
     }
@@ -636,16 +700,16 @@
     .founders-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: var(--sp-3);
+      gap: var(--sp-4);
       margin-top: var(--sp-6);
-      max-width: 840px;
+      max-width: 900px;
     }
 
     .founder-card {
       background: var(--surface);
       border: 1px solid var(--border-2);
       border-radius: var(--r-lg);
-      padding: var(--sp-4);
+      padding: var(--sp-5);
       position: relative;
       overflow: hidden;
       transition: transform 0.3s, border-color 0.3s;
@@ -655,7 +719,7 @@
       content: '';
       position: absolute;
       bottom: -30px; right: -30px;
-      width: 140px; height: 140px;
+      width: 160px; height: 160px;
       background: radial-gradient(circle, rgba(59,124,244,0.07) 0%, transparent 70%);
       border-radius: 50%;
       pointer-events: none;
@@ -667,27 +731,29 @@
     }
 
     .founder-card__avatar {
-      width: 56px; height: 56px;
+      width: 64px; height: 64px;
       border-radius: var(--r-md);
       background: linear-gradient(135deg, var(--accent), var(--accent-3));
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Syne', sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 800;
       color: #fff;
-      margin-bottom: var(--sp-2);
+      margin-bottom: var(--sp-3);
       position: relative;
       z-index: 1;
       flex-shrink: 0;
     }
 
+    /* ── Founder name — prominent h3 ─── */
     .founder-card__name {
       font-family: 'Syne', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1.35rem;
       font-weight: 700;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
+      letter-spacing: -0.02em;
     }
 
     .founder-card__role {
@@ -696,19 +762,149 @@
       text-transform: uppercase;
       letter-spacing: 0.09em;
       font-weight: 600;
-      margin-bottom: 14px;
+      margin-bottom: 20px;
     }
 
-    .founder-card__desc {
+    /* Founder skills list */
+    .founder-card__skills {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .founder-card__skills li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       font-size: 0.875rem;
       color: var(--text-2);
-      line-height: 1.65;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .founder-card__skills li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      flex-shrink: 0;
+      opacity: 0.75;
+    }
+
+    /* ─── TESTIMONIALS ───────────────────────────────────────────── */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+
+    .testimonial-card {
+      background: var(--surface);
+      border: 1px solid var(--border-2);
+      border-radius: var(--r-lg);
+      padding: var(--sp-5);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, border-color 0.3s;
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-3);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(59,124,244,0.24);
+    }
+
+    /* subtle top accent line on hover */
+    .testimonial-card::before {
+      content: '';
+      position: absolute;
+      inset: 0 0 auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-2), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .testimonial-card:hover::before { opacity: 1; }
+
+    .testimonial-card__quote-icon {
+      font-family: 'Syne', sans-serif;
+      font-size: 3.5rem;
+      line-height: 1;
+      color: var(--accent);
+      opacity: 0.20;
+      position: absolute;
+      top: var(--sp-3);
+      right: var(--sp-4);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .testimonial-card__stars {
+      display: flex;
+      gap: 3px;
+    }
+
+    .testimonial-card__star {
+      width: 14px; height: 14px;
+      color: #f5a623;
+      font-size: 0.8rem;
+    }
+
+    .testimonial-card__text {
+      font-size: 0.92rem;
+      color: var(--text-2);
+      line-height: 1.75;
       font-weight: 300;
+      font-style: italic;
+      flex: 1;
+    }
+
+    .testimonial-card__footer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: auto;
+    }
+
+    .testimonial-card__avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-3), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .testimonial-card__name {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .testimonial-card__role {
+      font-size: 0.72rem;
+      color: var(--text-3);
+      font-weight: 400;
     }
 
     /* ─── CONTACT ────────────────────────────────────────────────── */
     .contact-inner {
-      max-width: 580px;
+      max-width: 620px;
     }
 
     .contact-box {
@@ -736,7 +932,7 @@
 
     .contact-box__email {
       font-family: 'Syne', sans-serif;
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: var(--text);
       font-weight: 600;
     }
@@ -747,10 +943,10 @@
       gap: 8px;
       background: transparent;
       color: var(--accent-2);
-      padding: 11px 22px;
+      padding: 13px 26px;
       border-radius: var(--r-md);
       font-weight: 600;
-      font-size: 0.84rem;
+      font-size: 0.88rem;
       border: 1px solid rgba(0,201,255,0.28);
       cursor: pointer;
       transition: all 0.2s;
@@ -765,7 +961,7 @@
     }
 
     /* ─── FOOTER ─────────────────────────────────────────────────── */
-    .footer {
+    footer.footer {
       border-top: 1px solid var(--border);
       padding: var(--sp-4) var(--pad-x);
       display: flex;
@@ -825,29 +1021,29 @@
     .fade-up.delay-4 { transition-delay: 0.32s; }
 
     /* ─── RESPONSIVE ─────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     @media (max-width: 960px) {
       .why-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 768px) {
-      /* Nav */
-      .nav__links { display: none; }
-      .nav__cta   { display: none; }
+      .nav__links    { display: none; }
+      .nav__cta      { display: none; }
       .nav__hamburger { display: flex; }
 
-      /* Grids */
-      .services-grid   { grid-template-columns: 1fr; }
-      .founders-grid   { grid-template-columns: 1fr; }
-      .platforms-inner { grid-template-columns: 1fr; }
+      .services-grid      { grid-template-columns: 1fr; }
+      .founders-grid      { grid-template-columns: 1fr; }
+      .platforms-inner    { grid-template-columns: 1fr; }
+      .testimonials-grid  { grid-template-columns: 1fr; }
 
-      /* Stats */
       .hero__stats { gap: var(--sp-4); }
 
-      /* Contact */
       .contact-box { flex-direction: column; align-items: flex-start; }
 
-      /* Footer */
-      .footer {
+      footer.footer {
         flex-direction: column;
         text-align: center;
         gap: var(--sp-3);
@@ -870,275 +1066,388 @@
 <body>
 
   <!-- ═══ NAVIGATION ══════════════════════════════════════════════ -->
-  <nav class="nav" id="navbar" role="navigation" aria-label="Primary navigation">
-    <a href="#home" class="nav__logo" aria-label="StackVena — home">
-      <!-- Full logo with company name -->
-      <img
-        src="logo-full.svg"
-        alt="StackVena"
-        width="144"
-        height="52"
-        fetchpriority="high"
+  <header>
+    <nav class="nav" id="navbar" role="navigation" aria-label="Primary navigation">
+      <a href="#home" class="nav__logo" aria-label="StackVena — AI automation and full-stack development agency, home">
+        <img
+          src="logo-full.svg"
+          alt="StackVena — AI automation, LLM integration and full-stack development agency by Ahsan Raza and Muhammad Hamid"
+          width="144"
+          height="52"
+          fetchpriority="high"
+        >
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav__cta" aria-label="Start a project with StackVena — contact Ahsan Raza and Muhammad Hamid">
+        Start a Project
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+          <path d="M2 6.5h9M7 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <button
+        class="nav__hamburger"
+        id="hamburger"
+        aria-expanded="false"
+        aria-controls="mobile-drawer"
+        aria-label="Toggle navigation menu"
       >
-    </a>
-
-    <ul class="nav__links" role="list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <a href="#contact" class="nav__cta" aria-label="Start a project with StackVena">
-      Start a Project
-      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
-        <path d="M2 6.5h9M7 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-
-    <button
-      class="nav__hamburger"
-      id="hamburger"
-      aria-expanded="false"
-      aria-controls="mobile-drawer"
-      aria-label="Toggle navigation menu"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
   <!-- Mobile drawer -->
   <nav class="nav__drawer" id="mobile-drawer" aria-label="Mobile navigation">
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#about">About</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- ═══ HERO ══════════════════════════════════════════════════════ -->
-  <section class="hero" id="home" aria-labelledby="hero-heading">
-    <div class="hero__bg" aria-hidden="true"></div>
-    <div class="hero__grid" aria-hidden="true"></div>
+  <main>
 
-    <div class="hero__content">
-      <div class="hero__badge fade-up" aria-label="Status: Available for projects">
-        <span class="hero__badge-dot" aria-hidden="true"></span>
-        Available for Projects
-      </div>
+    <!-- ═══ HERO ════════════════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
 
-      <h1 class="hero__h1 fade-up delay-1" id="hero-heading">
-        <span class="gradient-text">Build. Automate.</span><br>Elevate.
-      </h1>
-
-      <p class="hero__desc fade-up delay-2">
-        We craft robust full-stack web products and intelligent AI systems — delivering
-        enterprise-grade quality at startup-friendly pricing.
-      </p>
-
-      <a href="#contact" class="btn-primary fade-up delay-3" aria-label="Work with StackVena — contact us">
-        Work With Us
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-
-      <div class="hero__stats fade-up delay-4" role="list" aria-label="Key stats">
-        <div class="stat" role="listitem">
-          <div class="stat__num">2+</div>
-          <div class="stat__label">Years Active</div>
+      <div class="hero__content">
+        <div class="hero__badge fade-up" aria-label="Status: Available for projects">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Available for Projects
         </div>
-        <div class="stat" role="listitem">
-          <div class="stat__num">100%</div>
-          <div class="stat__label">Client Focus</div>
-        </div>
-        <div class="stat" role="listitem">
-          <div class="stat__num">AI + Web</div>
-          <div class="stat__label">Dual Expertise</div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <div class="divider" role="separator" aria-hidden="true"></div>
+        <p class="hero__tagline fade-up delay-1">AI Automation · LLM Integration · Full-Stack Engineering</p>
 
-  <!-- ═══ SERVICES ════════════════════════════════════════════════ -->
-  <section id="services" aria-labelledby="services-heading">
-    <div class="section__label fade-up">What We Do</div>
-    <h2 class="section__title fade-up delay-1" id="services-heading">Our Core Services</h2>
-    <p class="section__sub fade-up delay-2">
-      Two powerful disciplines, one unified team — built to take your ideas from concept to production.
-    </p>
+        <h1 class="hero__h1 fade-up delay-1" id="hero-heading">
+          <span class="gradient-text">Build. Automate.</span><br>Elevate.
+        </h1>
 
-    <div class="services-grid fade-up delay-1" role="list">
-
-      <article class="service-card" role="listitem">
-        <div class="service-card__icon" aria-hidden="true">⚡</div>
-        <h3 class="service-card__title">Full Stack Web Development</h3>
-        <p class="service-card__desc">
-          From landing pages to complex platforms — we architect, design, and ship scalable web
-          applications with clean code and sharp UI. Every product is built for performance and longevity.
+        <p class="hero__desc fade-up delay-2">
+          We craft robust full-stack web products and intelligent AI systems — delivering
+          enterprise-grade quality at startup-friendly pricing. Expert LLM orchestration,
+          Python backend architecture, and React/Next.js development from a dedicated remote team.
         </p>
-        <div class="service-card__tags" aria-label="Technologies">
-          <span class="tag">React / Next.js</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">REST APIs</span>
-          <span class="tag">Deployment</span>
-        </div>
-      </article>
 
-      <article class="service-card" role="listitem">
-        <div class="service-card__icon service-card__icon--alt" aria-hidden="true">🤖</div>
-        <h3 class="service-card__title">AI Integration</h3>
-        <p class="service-card__desc">
-          We build intelligent systems that automate workflows, process data, and augment decision-making.
-          Python-powered automation that integrates seamlessly into your existing stack.
-        </p>
-        <div class="service-card__tags" aria-label="Technologies">
-          <span class="tag">Python</span>
-          <span class="tag">LLM APIs</span>
-          <span class="tag">Automation</span>
-          <span class="tag">Data Pipelines</span>
-          <span class="tag">OpenAI / Anthropic</span>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <div class="divider" role="separator" aria-hidden="true"></div>
-
-  <!-- ═══ WHY US ══════════════════════════════════════════════════ -->
-  <section aria-labelledby="why-heading">
-    <div class="section__label fade-up">Why StackVena</div>
-    <h2 class="section__title fade-up delay-1" id="why-heading">Built on Four Pillars</h2>
-    <p class="section__sub fade-up delay-2">
-      We believe great software is a result of discipline, clarity, and genuine investment in your success.
-    </p>
-
-    <div class="why-grid fade-up delay-1" role="list">
-      <article class="why-card" role="listitem">
-        <div class="why-card__num" aria-hidden="true">01</div>
-        <h3 class="why-card__title">Affordable Pricing</h3>
-        <p class="why-card__desc">Enterprise-grade quality without the enterprise price tag. Transparent, fair, flexible.</p>
-      </article>
-      <article class="why-card" role="listitem">
-        <div class="why-card__num" aria-hidden="true">02</div>
-        <h3 class="why-card__title">Stability &amp; Reliability</h3>
-        <p class="why-card__desc">We ship products that last — built with solid architecture, thorough testing, and clean handoffs.</p>
-      </article>
-      <article class="why-card" role="listitem">
-        <div class="why-card__num" aria-hidden="true">03</div>
-        <h3 class="why-card__title">Modern Tech Stack</h3>
-        <p class="why-card__desc">Always current. We leverage the latest tools and frameworks to give your product a real edge.</p>
-      </article>
-      <article class="why-card" role="listitem">
-        <div class="why-card__num" aria-hidden="true">04</div>
-        <h3 class="why-card__title">Client-First Approach</h3>
-        <p class="why-card__desc">Your vision drives us. We listen deeply, communicate clearly, and deliver what actually matters.</p>
-      </article>
-    </div>
-  </section>
-
-  <div class="divider" role="separator" aria-hidden="true"></div>
-
-  <!-- ═══ PLATFORMS ════════════════════════════════════════════════ -->
-  <section aria-labelledby="platforms-heading">
-    <div class="section__label fade-up">Where We Work</div>
-    <h2 class="section__title fade-up delay-1" id="platforms-heading">Our Platforms</h2>
-    <p class="section__sub fade-up delay-2">
-      Find us on Upwork or reach out directly — wherever you are, we're ready to collaborate.
-    </p>
-
-    <div class="platforms-inner">
-      <article class="platform-card fade-up delay-1">
-        <span class="platform-card__icon" aria-hidden="true">🌐</span>
-        <h3 class="platform-card__title">Upwork</h3>
-        <p class="platform-card__desc">
-          Hire us through Upwork for secure contracts, milestone-based payments, and verified work history.
-          Ideal for global clients.
-        </p>
-      </article>
-      <article class="platform-card fade-up delay-2">
-        <span class="platform-card__icon" aria-hidden="true">🤝</span>
-        <h3 class="platform-card__title">Local Clients</h3>
-        <p class="platform-card__desc">
-          Based in Pakistan, we work closely with local businesses to build digital products tailored
-          to regional needs and markets.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <div class="divider" role="separator" aria-hidden="true"></div>
-
-  <!-- ═══ FOUNDERS ════════════════════════════════════════════════ -->
-  <section id="about" aria-labelledby="founders-heading">
-    <div class="section__label fade-up">The Team</div>
-    <h2 class="section__title fade-up delay-1" id="founders-heading">Meet the Founders</h2>
-    <p class="section__sub fade-up delay-2">
-      Two specialists. One shared mission: shipping software that genuinely works.
-    </p>
-
-    <div class="founders-grid">
-      <article class="founder-card fade-up delay-1">
-        <div class="founder-card__avatar" aria-hidden="true">AR</div>
-        <div class="founder-card__name">Ahsan Raza</div>
-        <div class="founder-card__role">AI Integration Specialist</div>
-        <p class="founder-card__desc">
-          Python expert specializing in automation, intelligent systems, and AI-powered workflows.
-          Turns complex problems into elegant machine solutions.
-        </p>
-      </article>
-
-      <article class="founder-card fade-up delay-2">
-        <div class="founder-card__avatar" aria-hidden="true">MH</div>
-        <div class="founder-card__name">Muhammad Hamid</div>
-        <div class="founder-card__role">Full Stack Developer</div>
-        <p class="founder-card__desc">
-          Two years of hands-on experience in a professional software house — delivering polished,
-          production-ready web applications from design to deployment.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <div class="divider" role="separator" aria-hidden="true"></div>
-
-  <!-- ═══ CONTACT ══════════════════════════════════════════════════ -->
-  <section id="contact" aria-labelledby="contact-heading">
-    <div class="contact-inner">
-      <div class="section__label fade-up">Get in Touch</div>
-      <h2 class="section__title fade-up delay-1" id="contact-heading">Let's Build Something</h2>
-      <p class="section__sub fade-up delay-2">
-        Have a project in mind? Reach out and we'll get back to you within 24 hours.
-      </p>
-
-      <div class="contact-box fade-up delay-3">
-        <div>
-          <div class="contact-box__label">Email us at</div>
-          <div class="contact-box__email">contact@stackvena.com</div>
-        </div>
-        <a href="mailto:contact@stackvena.com" class="btn-outline" aria-label="Send email to StackVena">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
-            <path d="M1 2.5h13L7.5 8.5 1 2.5zm0 0v10l4-4m9-6v10l-4-4"
-              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <a href="#contact" class="btn-primary fade-up delay-3" aria-label="Work with StackVena — contact Ahsan Raza and Muhammad Hamid">
+          Work With Us
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          Send Email
         </a>
+
+        <div class="hero__stats fade-up delay-4" role="list" aria-label="Key stats">
+          <div class="stat" role="listitem">
+            <div class="stat__num">2+</div>
+            <div class="stat__label">Years Active</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num">100%</div>
+            <div class="stat__label">Client Focus</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num">AI + Web</div>
+            <div class="stat__label">Dual Expertise</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ═══ SERVICES ════════════════════════════════════════════════ -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="section__label fade-up">What We Do</div>
+      <h2 class="section__title fade-up delay-1" id="services-heading">Our Core Services</h2>
+      <p class="section__sub fade-up delay-2">
+        Two powerful disciplines, one unified team — built to take your ideas from concept to production.
+        From custom Python backend architecture to React/Next.js ecosystems and AI consulting.
+      </p>
+
+      <div class="services-grid fade-up delay-1" role="list">
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">🌐</div>
+          <h3 class="service-card__title">Full-Stack Product Engineering</h3>
+          <p class="service-card__desc">
+            From landing pages to complex SaaS platforms — we architect, design, and ship scalable web
+            applications with clean code and sharp UI. Every product is built for performance, longevity,
+            and real-world scale. Our TypeScript-first development approach ensures maintainable, robust codebases.
+          </p>
+          <div class="service-card__tags" aria-label="Technologies">
+            <span class="tag">React / Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Laravel / PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Deployment</span>
+          </div>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <div class="service-card__icon service-card__icon--alt" aria-hidden="true">AI</div>
+          <h3 class="service-card__title">AI-Powered Automation &amp; LLM Integration</h3>
+          <p class="service-card__desc">
+            We build intelligent systems that automate workflows, process data, and augment decision-making.
+            Expert LLM orchestration and Python-powered automation that integrates seamlessly into your existing
+            stack. From algorithmic problem solving to MongoDB &amp; NoSQL data modeling for AI applications.
+          </p>
+          <div class="service-card__tags" aria-label="Technologies">
+            <span class="tag">Python</span>
+            <span class="tag">LLM APIs</span>
+            <span class="tag">LLM Orchestration</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">OpenAI / Anthropic</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ═══ WHY US ══════════════════════════════════════════════════ -->
+    <section aria-labelledby="why-heading">
+      <div class="section__label fade-up">Why StackVena</div>
+      <h2 class="section__title fade-up delay-1" id="why-heading">Built on Four Pillars</h2>
+      <p class="section__sub fade-up delay-2">
+        We believe great software is a result of discipline, clarity, and genuine investment in your success.
+        Hire remote software engineers who deliver enterprise results without agency overhead.
+      </p>
+
+      <div class="why-grid fade-up delay-1" role="list">
+        <article class="why-card" role="listitem">
+          <div class="why-card__num" aria-hidden="true">01</div>
+          <h3 class="why-card__title">Affordable Pricing</h3>
+          <p class="why-card__desc">Enterprise-grade quality without the enterprise price tag. Transparent, fair, flexible.</p>
+        </article>
+        <article class="why-card" role="listitem">
+          <div class="why-card__num" aria-hidden="true">02</div>
+          <h3 class="why-card__title">Stability &amp; Reliability</h3>
+          <p class="why-card__desc">We ship products that last — built with solid architecture, thorough testing, and clean handoffs.</p>
+        </article>
+        <article class="why-card" role="listitem">
+          <div class="why-card__num" aria-hidden="true">03</div>
+          <h3 class="why-card__title">Modern Tech Stack</h3>
+          <p class="why-card__desc">Always current. We leverage the latest tools and frameworks to give your product a real edge.</p>
+        </article>
+        <article class="why-card" role="listitem">
+          <div class="why-card__num" aria-hidden="true">04</div>
+          <h3 class="why-card__title">Client-First Approach</h3>
+          <p class="why-card__desc">Your vision drives us. We listen deeply, communicate clearly, and deliver what actually matters.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ═══ PLATFORMS ════════════════════════════════════════════════ -->
+    <section aria-labelledby="platforms-heading">
+      <div class="section__label fade-up">Where We Work</div>
+      <h2 class="section__title fade-up delay-1" id="platforms-heading">Our Platforms</h2>
+      <p class="section__sub fade-up delay-2">
+        Find us on Upwork or reach out directly — wherever you are, we're ready to collaborate on
+        your next AI automation, API integration, or full-stack product engineering project.
+      </p>
+
+      <div class="platforms-inner">
+        <article class="platform-card fade-up delay-1">
+          <span class="platform-card__icon" aria-hidden="true">🌐</span>
+          <h3 class="platform-card__title">Upwork</h3>
+          <p class="platform-card__desc">
+            Hire us through Upwork for secure contracts, milestone-based payments, and verified work history.
+            Ideal for global clients seeking LLM integration or React Next.js development.
+          </p>
+        </article>
+        <article class="platform-card fade-up delay-2">
+          <span class="platform-card__icon" aria-hidden="true">🤝</span>
+          <h3 class="platform-card__title">Local Clients</h3>
+          <p class="platform-card__desc">
+            Based in Pakistan, we work closely with local businesses to build digital products tailored
+            to regional needs and markets — from SaaS development to custom Python backend solutions.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ═══ FOUNDERS ════════════════════════════════════════════════ -->
+    <section id="about" aria-labelledby="founders-heading">
+      <div class="section__label fade-up">The Team</div>
+      <h2 class="section__title fade-up delay-1" id="founders-heading">Meet the Founders</h2>
+      <p class="section__sub fade-up delay-2">
+        Two specialists. One shared mission: shipping software that genuinely works.
+        Ahsan Raza and Muhammad Hamid bring complementary expertise across AI consulting,
+        backend systems, and modern front-end engineering.
+      </p>
+
+      <div class="founders-grid">
+
+        <article class="founder-card fade-up delay-1" itemscope itemtype="https://schema.org/Person">
+          <div class="founder-card__avatar" aria-hidden="true">AR</div>
+          <h3 class="founder-card__name" itemprop="name">Ahsan Raza</h3>
+          <div class="founder-card__role" itemprop="jobTitle">AI Integration Specialist &amp; Co-Founder</div>
+          <ul class="founder-card__skills" aria-label="Ahsan Raza's core skills" itemprop="knowsAbout">
+            <li>AI-Powered Automation</li>
+            <li>LLM Integration </li>
+            <li>Python Backend Architecture</li>
+            <li>MongoDB &amp; NoSQL Data Modeling</li>
+            <li>Algorithmic Problem Solving</li>
+          </ul>
+          <h3><a href="https://www.linkedin.com/in/ahsan-raza-109a58305/">LinkedIN</a></h3>
+        </article>
+
+        <article class="founder-card fade-up delay-2" itemscope itemtype="https://schema.org/Person">
+          <div class="founder-card__avatar" aria-hidden="true">MH</div>
+          <h3 class="founder-card__name" itemprop="name">Muhammad Hamid</h3>
+          <div class="founder-card__role" itemprop="jobTitle">Full Stack Developer &amp; Co-Founder</div>
+          <ul class="founder-card__skills" aria-label="Muhammad Hamid's core skills" itemprop="knowsAbout">
+            <li>React &amp; Next.js Ecosystem</li>
+            <li>TypeScript-First Development</li>
+            <li>Laravel &amp; PHP Framework Expertise</li>
+            <li>MySQL Database Optimization</li>
+            <li>Full-Stack Product Engineering & SaaS Expert</li>
+          </ul>
+          <h3><a href="https://www.linkedin.com/in/muhammadhamid-dev/">LinkedIN</a></h3>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ═══ TESTIMONIALS ═════════════════════════════════════════════ -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="section__label fade-up">Client Feedback</div>
+      <h2 class="section__title fade-up delay-1" id="testimonials-heading">What Our Clients Say</h2>
+      <p class="section__sub fade-up delay-2">
+        Trusted by startups and businesses worldwide. Here's what clients say about working with
+        StackVena's AI automation experts and full-stack engineers.
+      </p>
+
+      <div class="testimonials-grid" role="list">
+
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">
+            "StackVena delivered an LLM-powered document processing pipeline in record time. Their Python
+            backend architecture is clean, scalable, and exactly what we needed. The MongoDB data modeling
+            they implemented handles our workload effortlessly. Truly enterprise-grade AI consulting."
+          </p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">JR</div>
+            <div>
+              <div class="testimonial-card__name">James R.</div>
+              <div class="testimonial-card__role">VP of Engineering, TechCorp Solutions</div>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card fade-up delay-2" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">
+            "We hired Muhammad Hamid to rebuild our frontend in Next.js with TypeScript and the result
+            exceeded all expectations. The React and Next.js ecosystem knowledge is exceptional — fast,
+            type-safe, and production-ready from day one. MySQL database optimization cut our query times in half."
+          </p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">SL</div>
+            <div>
+              <div class="testimonial-card__name">Sophia L.</div>
+              <div class="testimonial-card__role">CTO, NovaSaaS Inc.</div>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card fade-up delay-3" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">
+            "Ahsan's AI-powered automation workflows transformed our operations. The LLM integration
+            and orchestration saved our team over 30 hours per week. If you need algorithmic problem
+            solving and genuine AI consulting expertise, StackVena is the team to hire."
+          </p>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">DK</div>
+            <div>
+              <div class="testimonial-card__name">David K.</div>
+              <div class="testimonial-card__role">Founder, Automata Labs</div>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ═══ CONTACT ══════════════════════════════════════════════════ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="contact-inner">
+        <div class="section__label fade-up">Get in Touch</div>
+        <h2 class="section__title fade-up delay-1" id="contact-heading">Let's Build Something</h2>
+        <p class="section__sub fade-up delay-2">
+          Have a project in mind? Whether it's AI automation, LLM integration, full-stack product
+          engineering, or SaaS development — reach out and we'll get back to you within 24 hours.
+        </p>
+
+        <div class="contact-box fade-up delay-3">
+          <div>
+            <div class="contact-box__label">Email us at</div>
+            <div class="contact-box__email">contact@stackvena.com</div>
+          </div>
+          <a href="mailto:contact@stackvena.com" class="btn-outline" aria-label="Send email to StackVena — Ahsan Raza and Muhammad Hamid">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+              <path d="M1 2.5h13L7.5 8.5 1 2.5zm0 0v10l4-4m9-6v10l-4-4"
+                stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Send Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- ═══ FOOTER ══════════════════════════════════════════════════ -->
   <footer class="footer" role="contentinfo">
-    <a href="#home" class="footer__logo" aria-label="StackVena — back to top">
-      <!-- Icon-only logo in footer for compact layout -->
+    <a href="#home" class="footer__logo" aria-label="StackVena — AI automation and full-stack development agency, back to top">
       <img
         src="logo-full.svg"
-        alt="StackVena"
+        alt="StackVena — AI automation, LLM integration and full-stack development"
         width="105"
         height="38"
       >
@@ -1149,6 +1458,7 @@
         <ul class="footer__links" role="list">
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -1170,7 +1480,7 @@
       onScroll();
 
       /* ── Hamburger / mobile drawer ────────────────────────────── */
-      const hamburger   = document.getElementById('hamburger');
+      const hamburger    = document.getElementById('hamburger');
       const mobileDrawer = document.getElementById('mobile-drawer');
 
       const toggleMenu = (open) => {
@@ -1184,23 +1494,19 @@
       };
 
       hamburger.addEventListener('click', () => {
-        const isOpen = hamburger.classList.contains('is-open');
-        toggleMenu(!isOpen);
+        toggleMenu(!hamburger.classList.contains('is-open'));
       });
 
-      // Close on drawer link tap
       mobileDrawer.querySelectorAll('a').forEach(a => {
         a.addEventListener('click', () => toggleMenu(false));
       });
 
-      // Close on outside click
       document.addEventListener('click', (e) => {
         if (!navbar.contains(e.target) && !mobileDrawer.contains(e.target)) {
           toggleMenu(false);
         }
       });
 
-      /* ── Keyboard: close on Escape ────────────────────────────── */
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') toggleMenu(false);
       });
@@ -1227,8 +1533,9 @@
           const target = document.querySelector(anchor.getAttribute('href'));
           if (target) {
             e.preventDefault();
-            const offset = parseInt(getComputedStyle(document.documentElement)
-              .getPropertyValue('--nav-h')) || 72;
+            const offset = parseInt(
+              getComputedStyle(document.documentElement).getPropertyValue('--nav-h')
+            ) || 80;
             const top = target.getBoundingClientRect().top + window.scrollY - offset;
             window.scrollTo({ top, behavior: 'smooth' });
           }
