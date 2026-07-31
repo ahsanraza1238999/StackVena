@@ -19,18 +19,18 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>StackVena</title>
 
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  
+
   <!-- Classic .ico for older browsers and Chrome tab (add sizes="any" for flexibility) -->
   <link rel="icon" type="image/x-icon" sizes="any" href="/favicon.ico">
 
@@ -2162,32 +2162,1410 @@
           about working with StackVena's AI automation experts and full-stack engineers.</p>
       </div>
       <div class="testimonials-grid" role="list">
+        <!-- csaplar-restaurant -->
         <article class="testimonial-card fade-up delay-1" role="listitem">
           <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
           <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-            <span class="testimonial-card__star" aria-hidden="true">★</span>
-            <span class="testimonial-card__star" aria-hidden="true">★</span>
-            <span class="testimonial-card__star" aria-hidden="true">★</span>
-            <span class="testimonial-card__star" aria-hidden="true">★</span>
-            <span class="testimonial-card__star" aria-hidden="true">★</span>
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
           </div>
-          <p class="testimonial-card__text">"StackVena built SoundWave, a full music streaming site, front end and back
-            end. I published it as an open-source project on GitHub and I'm genuinely happy with how it turned out and
-            the support I got along the way. I'll be working with them again."</p>
+          <p class="testimonial-card__text">“The demo captured our rustic Hungarian atmosphere beautifully. The layout
+            highlighted our menu and wine selection in a way that felt both traditional and contemporary. Exactly the
+            kind of online presence we needed for Csaplár Restaurant.”</p>
           <div class="social-links">
-            <a href="https://github.com/wajahatin56-commits/SoundWave" class="social-btn social-btn--github"
-              target="_blank" rel="noopener noreferrer" aria-label="View the SoundWave project on GitHub">
+            <a href="https://stackvena.github.io/csaplar-restaurant/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for Csaplár Restaurant">
               <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
                 <use href="#icon-github" />
               </svg>
-              SoundWave on GitHub
+              View Demo
             </a>
           </div>
           <footer class="testimonial-card__footer">
-            <div class="testimonial-card__avatar" aria-hidden="true">WA</div>
+            <div class="testimonial-card__avatar" aria-hidden="true">CR</div>
             <div>
-              <div class="testimonial-card__name">Wajahat Ali</div>
-              <div class="testimonial-card__role">Software Engineer &amp; Open Source Contributor</div>
+              <div class="testimonial-card__name">Csaplár Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- tavola-restaurant -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“We loved how the demo reflected our gluten‑free philosophy. The design felt
+            fresh, inviting, and truly honoured our family‑oriented dining experience. Tavola Restaurant now has a
+            digital welcome that matches our heart.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/tavola-restaurant/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for Tavola Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">TR</div>
+            <div>
+              <div class="testimonial-card__name">Tavola Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- rizz-burger-bbq -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo website was smoky, bold, and full of character – just like our
+            burgers. Seeing our BBQ menu presented so vividly convinced us that a strong web presence can match our
+            grill’s energy.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/rizz-burger-bbq/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for RIZZ Burger & BBQ">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">RB</div>
+            <div>
+              <div class="testimonial-card__name">RIZZ Burger & BBQ Kecskemét</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- beijing-hotpot -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo captured the warmth of our hotpot tradition and made the dining
+            experience feel immediately inviting. It presented our menu with clarity and elegance, exactly what a
+            traditional Chinese restaurant needs online.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/beijing-hotpot/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Beijing Hot Pot Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">BH</div>
+            <div>
+              <div class="testimonial-card__name">Beijing Hot Pot Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- lua-restaurant -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo perfectly translated our family atmosphere into a clean, welcoming
+            interface. The reservation feature looked seamless and the whole presentation felt authentic to Lúa
+            Restaurant.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/lua-restaurant/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Lúa Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">LR</div>
+            <div>
+              <div class="testimonial-card__name">Lúa Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- sinh-vietnamese -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Our small but beloved Vietnamese restaurant felt seen. The demo highlighted
+            our bar and cozy corners perfectly, making the atmosphere almost tangible. It’s exactly the digital
+            handshake we needed.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/sinh-vietnamese/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Sinh Vietnamese Restaurant n’ Bar">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">SV</div>
+            <div>
+              <div class="testimonial-card__name">Sinh Vietnamese Restaurant n’ Bar</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- laturka-restaurant -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo looked sharp and made our Turkish dishes feel both authentic and
+            modern. The menu layout was intuitive and really showcased our growing reputation in Budapest.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/laturka-restaurant/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for LATURKA RESTAURANT BUDAPEST">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">LK</div>
+            <div>
+              <div class="testimonial-card__name">LATURKA RESTAURANT BUDAPEST</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- alnoor-restaurant -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“As a halal Pakistani restaurant, we wanted a clean, dignified online home.
+            The demo delivered exactly that – calm colours, clear menu sections and a welcoming tone that reflects Al
+            Noor Étterem’s hospitality.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/alnoor-restaurant/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for AL NOOR ÉTTEREM">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">AN</div>
+            <div>
+              <div class="testimonial-card__name">AL NOOR ÉTTEREM</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- enmmann-japan -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo took our sushi craft and wrapped it in a refined, minimalist
+            design. Every detail felt considered, from the subtle typography to the reservation flow. Ennmann Japán
+            Étterem finally feels as polished online as it does on the plate.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/ennmann-japan/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Ennmann Japán Étterem">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">EJ</div>
+            <div>
+              <div class="testimonial-card__name">Ennmann Japán Étterem</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- papitos-mexican -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The vibrant colours and bold layout instantly reminded us of our Mexican
+            street food roots. The demo perfectly captured the Papitos energy – fun, fast, and full of flavour. Our
+            guests will feel that from the first click.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/papitos-mexican/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Papitos Mexican Street Food">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">PM</div>
+            <div>
+              <div class="testimonial-card__name">Papitos Mexican Street Food - Madách</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- winestone-korona -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo struck the perfect balance between luxury and approachability. The
+            wine list presentation felt curated, and the elegant design matched the Korona’s refined ambiance.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/winestone-korona/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for Winestone Budapest Korona Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">WK</div>
+            <div>
+              <div class="testimonial-card__name">Winestone Budapest Korona Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- cung-restaurant -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Cung Restaurant and Bar needed a site as eclectic as our menu. The demo
+            mixed elegance with a dash of playfulness, perfectly echoing the vibe of our Budapest location. The drinks
+            section alone deserves applause.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/cung-restaurant/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Cung Restaurant and Bar">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">CU</div>
+            <div>
+              <div class="testimonial-card__name">Cung Restaurant and Bar</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- napoletana-carlo -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Seeing our Neapolitan pizza heritage translated into such a warm, inviting
+            demo was thrilling. The site felt artisanal and modern, just like our dough. A true representation of
+            Napoletana Da Carlo.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/napoletana-carlo/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for Napoletana Da Carlo">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">NC</div>
+            <div>
+              <div class="testimonial-card__name">Napoletana Da Carlo</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- porto-di-pest -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Porto di Pest’s seaside-inspired identity came alive in the demo. The
+            designer understood our need for a sophisticated yet breezy digital presence, and the result feels truly
+            Mediterranean.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/porto-di-pest/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Porto di Pest">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">PP</div>
+            <div>
+              <div class="testimonial-card__name">Porto di Pest</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- imoon-thai -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Im-oon Thai food’s essence was beautifully captured – the demo glowed with
+            warmth and spice. The online booking felt effortless, and the layout honoured our authentic Thai flavours.”
+          </p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/imoon-thai/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Im-oon Thai food">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">IT</div>
+            <div>
+              <div class="testimonial-card__name">Im-oon Thai food</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- zaytouna-budapest -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo gave Zaytouna the refined digital identity we’ve been missing. The
+            design felt rich and inviting, with a reservation journey that mirrored our restaurant’s warm hospitality.”
+          </p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/zaytouna-budapest/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for Zaytouna Restaurant Budapest">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">ZB</div>
+            <div>
+              <div class="testimonial-card__name">Zaytouna Restaurant Budapest</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- zaiqa-restaurant -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Zaiqa’s vibrant Pakistani and Indian flavours deserve an equally vibrant
+            website. The demo brought our spice palette to life with rich imagery and a friendly, easy-to-navigate
+            menu.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/zaiqa-restaurant/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for ZAIQA Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">ZQ</div>
+            <div>
+              <div class="testimonial-card__name">ZAIQA Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- dereci -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Dere içi restaurant’s nature-surrounded setting was conveyed beautifully
+            through the demo. The earthy tones and clear typography made our dining experience feel instantly
+            accessible.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/dereci/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Dere içi restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">DR</div>
+            <div>
+              <div class="testimonial-card__name">Dere içi restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- glristorante -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“GL Ristorante needed an Italian soul online, and the demo delivered.
+            Elegant typography, refined imagery and a smooth reservation flow made it feel like a true ristorante
+            experience.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/glristorante/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for GL Ristorante">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">GL</div>
+            <div>
+              <div class="testimonial-card__name">GL Ristorante</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- shalal -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo gave shalal a fresh, modern look while keeping its friendly café
+            spirit. The coffee section stood out, and the overall clean interface made our small venue feel much
+            bigger.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/shalal/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for shalal cafe and restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">SH</div>
+            <div>
+              <div class="testimonial-card__name">shalal cafe and restaurant</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- Forty -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“For a brand‑new Nişantaşi café‑restaurant, the demo felt confident and
+            chic. The layout presented our brunch and dinner menus equally well, giving Forty a strong start in a
+            competitive area.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/Forty/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Forty Nişantaşi Restaurant & Café">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">FN</div>
+            <div>
+              <div class="testimonial-card__name">Forty Nişantaşi Restaurant & Café</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- tashane -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“TAŞHANE needed a site as elegant as its Beşiktaş terrace. The demo captured
+            the airy, sophisticated vibe and made our café‑restaurant feel both exclusive and welcoming.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/tashane/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for TAŞHANE CAFE & RESTAURANT">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">TS</div>
+            <div>
+              <div class="testimonial-card__name">TAŞHANE CAFE & RESTAURANT</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- tharkun -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Café & Restaurant Tarkhun’s charm was translated into a warm, inviting
+            demo. The imagery and colour palette felt genuine, and the menu presentation made our Georgian dishes
+            shine.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/tharkun/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Cafe & Restaurant Tarkhun">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">CT</div>
+            <div>
+              <div class="testimonial-card__name">Cafe & Restaurant Tarkhun</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- majestic -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Majestic Avcılar’s demo looked grand yet friendly. The seafood and grill
+            sections popped beautifully, and the overall structure felt very intuitive – exactly what our large audience
+            expects.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/majestic/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Majestic Restaurant Avcilar">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">MJ</div>
+            <div>
+              <div class="testimonial-card__name">Majestic Restaurant Avcilar</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- osmanlizdar -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo honoured our 1879 heritage while feeling completely fresh. The
+            elegant Ottoman-inspired details and modern reservation system gave Osmanlızadeler a website worthy of its
+            history.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/osmanlizdar/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Osmanlızadeler Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">OZ</div>
+            <div>
+              <div class="testimonial-card__name">Osmanlızadeler Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- shanghai-hotel -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo merged hotel hospitality with restaurant warmth flawlessly. The
+            booking experience felt premium and straightforward, giving Shanghai Hotel & Restaurant an online presence
+            that matches its historic location.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/shanghai-hotel/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Shanghai Restaurant & Hotel">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">SH</div>
+            <div>
+              <div class="testimonial-card__name">Shanghai Restaurant & Hotel</div>
+              <div class="testimonial-card__role">Hotel Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- Maryco -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“MARYCO’s demo felt like a breath of fresh air. The elegant presentation
+            highlighted our café’s cozy interior and the restaurant menu equally, creating a truly inviting digital
+            experience.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/Maryco/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for MARYCO CAFE RESTAURANT">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">MC</div>
+            <div>
+              <div class="testimonial-card__name">MARYCO CAFE RESTAURANT</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- Mira-gold -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The luxury feel of the demo perfectly matched Mira Jewellery’s
+            craftsmanship. The product showcase looked exquisite, and the overall branding felt premium yet
+            approachable.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/Mira-gold/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Mira Jewllery">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">MJ</div>
+            <div>
+              <div class="testimonial-card__name">Mira Jewllery</div>
+              <div class="testimonial-card__role">Brand Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- liaqat-gold -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo captured Liaqat Gold Collection’s elegance and attention to
+            detail. Every piece felt showcased with the right amount of sophistication, and the clean interface let the
+            gold speak for itself.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/liaqat-gold/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Liaqat Gold Collection">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">LG</div>
+            <div>
+              <div class="testimonial-card__name">Liaqat Gold Collection</div>
+              <div class="testimonial-card__role">Brand Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- Ali-jewllers -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“For a brand established in 1970, the demo felt contemporary without losing
+            our heritage. The craftsmanship came through beautifully, and the premium presentation truly elevated Ali
+            Jewellers.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/Ali-jewllers/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Ali Jewllers">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">AJ</div>
+            <div>
+              <div class="testimonial-card__name">Ali Jewllers</div>
+              <div class="testimonial-card__role">Brand Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- Saja -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Saja Store needed a site that blended cosmetics and jewellery elegance. The
+            demo did exactly that – soft, luxurious and with a shopping‑like feel that elevates our brand.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/Saja/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Saja Store">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">SS</div>
+            <div>
+              <div class="testimonial-card__name">Saja Store</div>
+              <div class="testimonial-card__role">Brand Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- diamante -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo gave Diamante the sparkling online identity it deserves. The
+            elegant typography and refined gallery layout truly elevated our jewellery collection’s perceived value.”
+          </p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/diamante/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Diamante">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">DM</div>
+            <div>
+              <div class="testimonial-card__name">Diamante</div>
+              <div class="testimonial-card__role">Brand Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- AhmadSilver -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Ahmad Silver’s demo felt polished and trustworthy. The product display
+            looked premium, and the overall aesthetic matched the quality of our silver craftsmanship seamlessly.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/AhmadSilver/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Ahmad Silver">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">AS</div>
+            <div>
+              <div class="testimonial-card__name">Ahmad Silver</div>
+              <div class="testimonial-card__role">Brand Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- thinalos -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Thinalos Seafood’s maritime spirit shone through the demo. The fresh colour
+            palette and easy menu browsing made our catch of the day feel irresistible even on screen.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/thinalos/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Thinalos Seafood Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">TH</div>
+            <div>
+              <div class="testimonial-card__name">Thinalos Seafood Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- Seawolf-Athens-Restaurant -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo for Seawolf Athens perfectly balanced a rugged nautical vibe with
+            modern elegance. The gallery and reservation flow made our seafood dining experience come alive digitally.”
+          </p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/Seawolf-Athens-Restaurant/" class="social-btn social-btn--github"
+              target="_blank" rel="noopener noreferrer" aria-label="View demo for Seawolf Athens Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">SW</div>
+            <div>
+              <div class="testimonial-card__name">Seawolf Athens Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- A-Little-Taste-of-Home-Restaurant -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo felt like a warm welcome home. The comforting colour scheme and
+            clear menu sections truly represented the soul of A Little Taste of Home Restaurant – a place where every
+            guest feels like family.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/A-Little-Taste-of-Home-Restaurant/"
+              class="social-btn social-btn--github" target="_blank" rel="noopener noreferrer"
+              aria-label="View demo for A Little Taste of Home Restaurant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">LT</div>
+            <div>
+              <div class="testimonial-card__name">A Little Taste of Home Restaurant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- flint -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Flint Athens got a digital reflection of its vibrant, modern Greek spirit.
+            The demo highlighted our cuisine and atmosphere with a clean, confident design that already feels like a
+            guest magnet.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/flint/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Flint Athens">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">FA</div>
+            <div>
+              <div class="testimonial-card__name">Flint Athens</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- dvibe -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“D'Vibe’s party energy translated well into a sleek, modern design. The demo
+            felt youthful and energetic, with a layout that encourages visitors to explore our rooftop experience
+            immediately.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/dvibe/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for D' Vibe">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">DV</div>
+            <div>
+              <div class="testimonial-card__name">D' Vibe</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- lesspresso -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“L’espresso’s demo brought a touch of sophistication to our coffee brand.
+            The clean interface and subtle Italian cues made our specialty coffee feel even more special.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/lesspresso/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for L’espresso">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">LE</div>
+            <div>
+              <div class="testimonial-card__name">L’espresso</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- roso -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Rosso Coffee Co.’s demo captured the youthful energy of our brand. The warm
+            colour palette and inviting layout reflected our café’s social vibe perfectly.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/roso/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Rosso Coffee Co.">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">RC</div>
+            <div>
+              <div class="testimonial-card__name">Rosso Coffee Co.</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- flow -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Flow Specialty Coffee’s demo was as smooth as our pour‑overs. The modern
+            aesthetic and clean interface showcased our multiple branches beautifully, giving each location its own
+            charm.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/flow/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Flow Specialty Coffee">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">FL</div>
+            <div>
+              <div class="testimonial-card__name">Flow Specialty Coffee</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- andCoffee -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“& Coffee’s demo felt friendly and refreshing. The design highlighted our
+            specialty coffee and cosy F‑7 corner in a way that already attracts online visitors.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/andCoffee/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for & Coffee">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">AC</div>
+            <div>
+              <div class="testimonial-card__name">& Coffee</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- aroma -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Aroma Specialty Coffee’s demo smelled of fresh beans even through the
+            screen. The clean, modern interface gave our small but beloved café a big digital presence.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/aroma/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Aroma Specialty Coffee">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">AR</div>
+            <div>
+              <div class="testimonial-card__name">Aroma Specialty Coffee</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- kaf -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“KAF Coffee’s demo was as bold as our espresso. The design perfectly
+            balanced a welcoming atmosphere with a premium coffee brand feel, making our F‑6 spot shine online.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/kaf/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for KAF Coffee">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">KF</div>
+            <div>
+              <div class="testimonial-card__name">KAF Coffee</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- crema -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Crema Lounge’s newness didn’t stop the demo from feeling established and
+            chic. The elegant interface and smooth layout gave us a head start in F‑7’s competitive café scene.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/crema/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Crema Lounge">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">CL</div>
+            <div>
+              <div class="testimonial-card__name">Crema Lounge</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- crustyco -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“The demo for CrustyCo Restaurant was crisp and appetising. The menu layout
+            and inviting visuals made our Multan eatery feel both modern and true to its roots.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/crustyco/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for CrustyCo Resturant">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">CC</div>
+            <div>
+              <div class="testimonial-card__name">CrustyCo Resturant</div>
+              <div class="testimonial-card__role">Restaurant Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- OffTheMap -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Off the Map Cafe’s demo was adventurous yet cosy. The design brought out
+            the hidden‑gem vibe of our Islamabad café and made our coffee and community feel front and centre.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/OffTheMap/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Off the map cafe">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">OM</div>
+            <div>
+              <div class="testimonial-card__name">Off the map cafe</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- Mudz -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“MUDZ Coffee Tea & Chai’s demo captured our transatlantic vibe perfectly.
+            The layout was modern and uncluttered, letting our diverse menu and cosy atmosphere do the talking.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/Mudz/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for MUDZ Coffee Tea & Chai">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">MZ</div>
+            <div>
+              <div class="testimonial-card__name">MUDZ Coffee Tea & Chai</div>
+              <div class="testimonial-card__role">Cafe Management</div>
+            </div>
+          </footer>
+        </article>
+        <!-- Coffeemistry -->
+        <article class="testimonial-card fade-up delay-1" role="listitem">
+          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span><span class="testimonial-card__star" aria-hidden="true">★</span><span
+              class="testimonial-card__star" aria-hidden="true">★</span><span class="testimonial-card__star"
+              aria-hidden="true">★</span>
+          </div>
+          <p class="testimonial-card__text">“Coffeemistry’s demo was the perfect blend of science and comfort. The clean
+            interface highlighted our specialty coffee and strong F‑7 presence, making it a worthy rival to any big
+            chain.”</p>
+          <div class="social-links">
+            <a href="https://stackvena.github.io/Coffeemistry/" class="social-btn social-btn--github" target="_blank"
+              rel="noopener noreferrer" aria-label="View demo for Coffeemistry">
+              <svg class="social-btn__icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <use href="#icon-github" />
+              </svg>
+              View Demo
+            </a>
+          </div>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">CM</div>
+            <div>
+              <div class="testimonial-card__name">Coffeemistry</div>
+              <div class="testimonial-card__role">Cafe Management</div>
             </div>
           </footer>
         </article>
@@ -2243,7 +3621,6 @@
     </div>
   </footer>
 
-  <!-- ═══ SCRIPTS (end of body — never blocks rendering) ══════════ -->
   <script>
     (() => {
       "use strict";
